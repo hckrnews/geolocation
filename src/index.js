@@ -1,5 +1,4 @@
-import allDealers from './dealers.js'
-import RandomDealer from './random-dealer.js'
+import makeAllDealers from './dealers/all-dealers.js'
 import getDealers from './filter-dealers.js'
 
 // Details about my position
@@ -12,21 +11,14 @@ const position = {
 // Distance between me and a dealer
 const distance = 12000 // 12km
 
-// Seed 10.000 random dealers
-console.time('seedDealers')
-const dealerFactory = new RandomDealer({ amount: 10000 })
-const randomDealers = []
-for (const dealer of dealerFactory.generator()) {
-  randomDealers.push(dealer)
-}
-console.timeEnd('seedDealers')
+const dealers = makeAllDealers({ amount: 10000 })
 
 // Get the dealers within 12km
 console.time('getDealers')
 const nearDealers = getDealers({
   position,
   distance,
-  dealers: [...allDealers, ...randomDealers]
+  dealers
 })
 console.timeEnd('getDealers')
 

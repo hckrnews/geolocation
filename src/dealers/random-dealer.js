@@ -1,4 +1,4 @@
-import getRandomValue from './random-value.js'
+import getRandomValue from '../helpers/random-value.js'
 
 export default class RandomDealer {
   constructor ({ amount }) {
