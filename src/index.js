@@ -12,9 +12,11 @@ const position = {
 // Distance between me and a dealer
 const distance = 12000 // 12km
 
+console.time('getAllDealers')
 const dealers = makeAllDealers({ amount: 10000 })
+console.timeEnd('getAllDealers')
 
-//
+// Get the distance between me and all dealers
 console.time('getDealerDistance')
 const dealersWithDistance = getDealerDistance({
   position,
