@@ -1,4 +1,5 @@
 import makeAllDealers from './dealers/all-dealers.js'
+import getDealerDistance from './get-dealer-distance.js'
 import getDealers from './filter-dealers.js'
 
 // Details about my position
@@ -13,12 +14,19 @@ const distance = 12000 // 12km
 
 const dealers = makeAllDealers({ amount: 10000 })
 
+//
+console.time('getDealerDistance')
+const dealersWithDistance = getDealerDistance({
+  position,
+  dealers
+})
+console.timeEnd('getDealerDistance')
+
 // Get the dealers within 12km
 console.time('getDealers')
 const nearDealers = getDealers({
-  position,
   distance,
-  dealers
+  dealers: dealersWithDistance
 })
 console.timeEnd('getDealers')
 

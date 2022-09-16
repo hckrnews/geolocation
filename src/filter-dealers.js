@@ -1,6 +1,2 @@
-import getDistanceBetween from './helpers/distance-between.js'
-
-export default ({ position, distance, dealers }) => dealers.filter(dealer => {
-  const distanceBetween = getDistanceBetween({ coords: position.coords, location: dealer.location })
-  return distanceBetween < distance
-})
+export default ({ distance, dealers }) => dealers
+  .filter(dealer => dealer.distance < distance)
