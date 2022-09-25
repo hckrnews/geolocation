@@ -16,7 +16,9 @@ test('Test the dealer filter on distance', async (t) => {
       }
     ]
 
+    const startTime = process.hrtime()
     const result = filterDealers({ distance, dealers })
+    const executeTime = process.hrtime(startTime)
     const expected = [
       {
         id: 1,
@@ -25,5 +27,7 @@ test('Test the dealer filter on distance', async (t) => {
     ]
 
     assert.deepEqual(result, expected)
+    assert.strictEqual(executeTime[0], 0)
+    assert.ok(executeTime[1] < 100000, 'The function is executed in less than 0.1 milliseconds')
   })
 })

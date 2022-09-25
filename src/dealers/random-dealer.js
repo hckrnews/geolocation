@@ -9,8 +9,8 @@ export default class RandomDealer {
     return {
       name: `Random ${index}`,
       location: {
-        latitude: getRandomValue(50, 53),
-        longitude: getRandomValue(4, 7)
+        latitude: getRandomValue(50000, 53000) / 1000,
+        longitude: getRandomValue(4000, 7000) / 1000
       }
     }
   }
