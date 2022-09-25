@@ -1,1 +1,3 @@
-export default (min, max) => Math.random() * (max - min) + min
+import { randomInt } from 'node:crypto'
+
+export default (min, max) => randomInt(min, max + 1)
