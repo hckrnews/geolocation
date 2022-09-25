@@ -1,4 +1,4 @@
-const toRadians = (degrees) => degrees * Math.PI / 180
+const toRadians = (degrees) => (degrees * Math.PI) / 180
 
 export default ({ coords, location }) => {
   const R = 6371e3 // metres
@@ -7,9 +7,9 @@ export default ({ coords, location }) => {
   const Δφ = toRadians(location.latitude - coords.latitude)
   const Δλ = toRadians(location.longitude - coords.longitude)
 
-  const a = Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
-    Math.cos(φ1) * Math.cos(φ2) *
-    Math.sin(Δλ / 2) * Math.sin(Δλ / 2)
+  const a =
+    Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
+    Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2)
   const distance = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
 
   return R * distance
