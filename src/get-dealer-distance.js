@@ -7,7 +7,7 @@ import getDistanceBetween from './helpers/distance-between.js'
  * @param {object} options.position
  * @param {number} options.position.latitude
  * @param {number} options.position.longitude
- * @param {object[]} options.dealer
+ * @param {object[]} options.dealers
  *
  * @returns {object[]} dealers
  */
