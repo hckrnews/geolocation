@@ -1,7 +1,4 @@
-import dealers from './dealers.js'
-import makeRandomDealers from './random-dealers.js'
+import dealers from './__fixtures__/dealers.js'
+import makeRandomDealers from './random-dealers-factory.js'
 
-export default ({ amount }) => [
-  ...dealers,
-  ...makeRandomDealers({ amount })
-]
+export default ({ amount }) => [...dealers, ...makeRandomDealers({ amount })]

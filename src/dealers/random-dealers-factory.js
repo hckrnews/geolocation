@@ -1,4 +1,3 @@
-
 import RandomDealer from './random-dealer.js'
 
 export default ({ amount }) => {

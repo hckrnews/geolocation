@@ -9,7 +9,8 @@
     "**/*.unit.js",
     "**/*.feature.js",
     "**/*.e2e.js",
-    "**/__fixtures__/**"
+    "**/__fixtures__/**",
+    "src/index.js"
   ],
   "reporter": [
     "text",
@@ -20,19 +21,19 @@
   "check-coverage": true,
   "watermarks": {
     "lines": [
-      80,
+      20,
       95
     ],
     "functions": [
-      80,
+      20,
       95
     ],
     "branches": [
-      80,
+      20,
       95
     ],
     "statements": [
-      80,
+      20,
       95
     ]
   }
