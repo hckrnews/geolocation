@@ -1,5 +1,19 @@
 const toRadians = (degrees) => (degrees * Math.PI) / 180
 
+/**
+ * Calculates the distance between two points on a sphere.
+ * https://en.wikipedia.org/wiki/Haversine_formula
+ *
+ * @param {object} options
+ * @param {object} options.coords
+ * @param {number} options.coords.latitude
+ * @param {number} options.coords.longitude
+ * @param {object} options.location
+ * @param {number} options.location.latitude
+ * @param {number} options.location.longitude
+ *
+ * @returns {number}
+ */
 export default ({ coords, location }) => {
   const R = 6371e3 // metres
   const φ1 = toRadians(coords.latitude)
