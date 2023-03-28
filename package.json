@@ -3,6 +3,16 @@
   "version": "0.1.0",
   "description": "Geolocation helper",
   "main": "src/index.js",
+  "files": [
+    "src/index.js",
+    "src/filter-locations.js",
+    "src/get-location-distance.js",
+    "src/helpers/distance-between.js",
+    "src/helpers/random-value.js",
+    "src/seeder/all-locations.js",
+    "src/seeder/random-location-factory.js",
+    "src/seeder/random-location"
+  ],
   "scripts": {
     "start": "node src/index.js",
     "test": "c8 node --test src/",
