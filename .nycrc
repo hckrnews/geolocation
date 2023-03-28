@@ -9,8 +9,7 @@
     "**/*.unit.js",
     "**/*.feature.js",
     "**/*.e2e.js",
-    "**/__fixtures__/**",
-    "src/index.js"
+    "**/__fixtures__/**"
   ],
   "reporter": [
     "text",
