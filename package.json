@@ -1,15 +1,26 @@
 {
-  "name": "geolocation",
-  "version": "1.0.0",
-  "description": "Geolocation test",
+  "name": "@hckrnews/geolocation",
+  "version": "0.1.0",
+  "description": "Geolocation helper",
   "main": "src/index.js",
+  "files": [
+    "src/index.js",
+    "src/filter-locations.js",
+    "src/get-location-distance.js",
+    "src/helpers/distance-between.js",
+    "src/helpers/random-value.js",
+    "src/seeder/all-locations.js",
+    "src/seeder/random-location-factory.js",
+    "src/seeder/random-location"
+  ],
   "scripts": {
     "start": "node src/index.js",
     "test": "c8 node --test src/",
     "vulnerabilities": "npm audit --production",
     "lint": "standard src",
     "lint:fix": "standard src --fix",
-    "lint:report": "standard src | standard-reporter --json > report.json"
+    "lint:report": "standard src | standard-reporter --json > report.json",
+    "cpd": "node_modules/jscpd/bin/jscpd src"
   },
   "engines": {
     "node": ">= 18"
@@ -18,7 +29,23 @@
   "license": "GPL-3",
   "devDependencies": {
     "c8": "^7.12.0",
+    "jscpd": "^3.5.4",
     "standard": "^17.0.0",
     "standard-reporter": "^1.0.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hckrnews/geolocation.git"
+  },
+  "author": {
+    "name": "Pieter Wigboldus",
+    "url": "https://hckr.news/"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/w3nl"
+  },
+  "keywords": [
+    "geolocation"
+  ]
 }
