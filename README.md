@@ -78,7 +78,7 @@ Result:
 npm test
 ```
 
-This will run all the tests in the test folder with mocha.
+This will run all the tests in the test folders with the native test runner.
 
 If you only want to check the eslint rules, just run.
 
