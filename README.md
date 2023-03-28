@@ -94,6 +94,8 @@ To include @hckrnews/geolocation in Node, first install with npm.
 npm install @hckrnews/geolocation
 ```
 
+Check if your node version is 18+
+
 Use the package in your node files.
 
 ```javascript
