@@ -97,7 +97,7 @@ npm install @hckrnews/geolocation
 Use the package in your node files.
 
 ```javascript
-import { Arr } from '@hckrnews/geolocation';
+import { filterLocationsOnDistance } from '@hckrnews/geolocation';
 ```
 
 
