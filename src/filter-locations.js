@@ -2,8 +2,8 @@
  * Filter locations by distance
  *
  * @param {object} options
- * @param {number} options.distance
- * @param {object[]} options.locations
+ * @param {number} options.distance - Distance in meters
+ * @param {object[]} options.locations - Location objects
  *
  * @returns {object[]} locations
  */

@@ -16,13 +16,16 @@ Or on patreon: https://patreon.com/w3news
 
 
 ```javascript
-import { getLocationDistance, filterLocations } from '@hckrnews/geolocation';
+import { filterLocationsOnDistance } from '@hckrnews/geolocation';
 
 // My position coords
 const coords: {
   latitude: 52.12265270227936,
   longitude: 5.575334785130014
 }
+
+// Distance to swarch within
+const distance = 12000
 
 // Some example locations
 const locations = [
@@ -50,40 +53,10 @@ const locations = [
 ]
 
 //  Calculate my distance from all locations
-const locationsWithDistance = getLocationDistance({ coords, locations })
+const locationsWithDistance = filterLocationsOnDistance({ coords, locations, distance })
 ```
 
 Result:
-```javascript
-[
-  {
-    name: 'Location 1',
-    location: {
-      latitude: 52.045934,
-      longitude: 6.102895
-    },
-    distance: 37043.453823201824
-  },
-  {
-    name: 'Location 2',
-    location: {
-      latitude: 52.17306,
-      longitude: 5.434552
-    },
-    distance: 11121.588884360723
-  },
-  {
-    name: 'Location 3',
-    location: {
-      latitude: 52.057043,
-      longitude: 4.389277
-    },
-    distance: 81359.41099661689
-  }
-]
-```
-
-Filter locations on distance
 ```javascript
 [
   {
@@ -96,15 +69,6 @@ Filter locations on distance
   }
 ]
 ```
-// Distance to swarch within
-const distance = 12000
-
-// Filter locations on distance
-const result = filterLocations({ distance, locations: locationsWithDistance })
-```
-
-Result:
-```javascript
 
 ## Test the package.
 
