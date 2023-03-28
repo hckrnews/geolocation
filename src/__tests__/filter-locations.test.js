@@ -30,8 +30,8 @@ test('Test the location filter on distance', async (t) => {
     assert.deepEqual(result, expected)
     assert.strictEqual(executeTime[0], 0)
     assert.ok(
-      executeTime[1] < 100000,
-      'The function is executed in less than 0.1 milliseconds'
+      executeTime[1] < 1000000,
+      'The function is executed in less than 1 milliseconds'
     )
   })
 

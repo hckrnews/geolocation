@@ -4,7 +4,9 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=hckrnews_geolocation&metric=bugs)](https://sonarcloud.io/summary/new_code?id=hckrnews_geolocation) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=hckrnews_geolocation&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=hckrnews_geolocation) [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=hckrnews_geolocation&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=hckrnews_geolocation) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=hckrnews_geolocation&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=hckrnews_geolocation)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=hckrnews_geolocation&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=hckrnews_geolocation) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=hckrnews_geolocation&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=hckrnews_geolocation) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=hckrnews_geolocation&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=hckrnews_geolocation)
 
-Geolocation helper for find location in a range
+Geolocation helper for find location in a range.
+
+It use the [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula) to calculate the distance.
 
 ## Sponsors :tada:
 
@@ -15,7 +17,6 @@ But me a coffee/book: https://www.buymeacoffee.com/hckrnews
 Or on patreon: https://patreon.com/w3news
 
 ## Example usage
-
 
 ```javascript
 import { filterLocationsOnDistance } from '@hckrnews/geolocation';
