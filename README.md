@@ -51,7 +51,51 @@ const locations = [
 
 //  Calculate my distance from all locations
 const locationsWithDistance = getLocationDistance({ coords, locations })
+```
 
+Result:
+```javascript
+[
+  {
+    name: 'Location 1',
+    location: {
+      latitude: 52.045934,
+      longitude: 6.102895
+    },
+    distance: 37043.453823201824
+  },
+  {
+    name: 'Location 2',
+    location: {
+      latitude: 52.17306,
+      longitude: 5.434552
+    },
+    distance: 11121.588884360723
+  },
+  {
+    name: 'Location 3',
+    location: {
+      latitude: 52.057043,
+      longitude: 4.389277
+    },
+    distance: 81359.41099661689
+  }
+]
+```
+
+Filter locations on distance
+```javascript
+[
+  {
+    name: 'Location 2',
+    location: {
+      latitude: 52.17306,
+      longitude: 5.434552
+    },
+    distance: 11121.588884360723
+  }
+]
+```
 // Distance to swarch within
 const distance = 12000
 
@@ -59,6 +103,8 @@ const distance = 12000
 const result = filterLocations({ distance, locations: locationsWithDistance })
 ```
 
+Result:
+```javascript
 
 ## Test the package.
 
