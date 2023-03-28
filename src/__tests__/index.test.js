@@ -35,7 +35,7 @@ test('Test the get location distance', async (t) => {
     ]
 
     const startTime = process.hrtime()
-    const result = filterLocationsOnDistance({ coords: position.coords, locations, distance: 12000 })
+    const result = filterLocationsOnDistance(locations, position.coords, 12000)
     const executeTime = process.hrtime(startTime)
 
     const expected = [

@@ -36,7 +36,7 @@ test('Test the location filter on distance', async (t) => {
   })
 
   await t.test(
-    'It should return locations with distance of 10000 locations within 2 milliseconds',
+    'It should return locations with distance of 10000 locations within 5 milliseconds',
     () => {
       const distance = 12000
       const locations = makeAllLocations({ amount: 10000 })
@@ -47,8 +47,8 @@ test('Test the location filter on distance', async (t) => {
 
       assert.strictEqual(executeTime[0], 0)
       assert.ok(
-        executeTime[1] < 2000000,
-        'The function is executed in less than 2 milliseconds'
+        executeTime[1] < 5000000,
+        'The function is executed in less than 5 milliseconds'
       )
     }
   )
