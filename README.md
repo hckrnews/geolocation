@@ -55,7 +55,7 @@ const locations = [
 ]
 
 //  Calculate my distance from all locations
-const locationsWithDistance = filterLocationsOnDistance({ coords, locations, distance })
+const locationsWithDistance = filterLocationsOnDistance(coords, locations, distance)
 ```
 
 Result:
