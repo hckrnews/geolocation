@@ -1,17 +1,13 @@
 {
   "name": "@hckrnews/geolocation",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Geolocation helper",
   "main": "src/index.js",
   "files": [
     "src/index.js",
     "src/filter-locations.js",
     "src/get-location-distance.js",
-    "src/helpers/distance-between.js",
-    "src/helpers/random-value.js",
-    "src/seeder/all-locations.js",
-    "src/seeder/random-location-factory.js",
-    "src/seeder/random-location"
+    "src/helpers/distance-between.js"
   ],
   "scripts": {
     "start": "node src/index.js",
