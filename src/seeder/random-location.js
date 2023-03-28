@@ -1,11 +1,11 @@
 import getRandomValue from '../helpers/random-value.js'
 
-export default class RandomDealer {
+export default class RandomLocation {
   constructor ({ amount }) {
     this.amount = amount
   }
 
-  randomDealer ({ index }) {
+  randomLocation ({ index }) {
     return {
       name: `Random ${index}`,
       location: {
@@ -19,7 +19,7 @@ export default class RandomDealer {
     let index = 0
     while (index < this.amount) {
       index++
-      yield this.randomDealer({ index })
+      yield this.randomLocation({ index })
     }
   }
 }
