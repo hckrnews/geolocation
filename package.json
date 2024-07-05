@@ -1,6 +1,6 @@
 {
   "name": "@hckrnews/geolocation",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Geolocation helper",
   "main": "src/index.js",
   "files": [
@@ -24,8 +24,8 @@
   "type": "module",
   "license": "MIT",
   "devDependencies": {
-    "c8": "^8.0.0",
-    "jscpd": "^3.5.4",
+    "c8": "^10.0.0",
+    "jscpd": "^4.0.0",
     "standard": "^17.0.0",
     "standard-reporter": "^1.0.5"
   },
