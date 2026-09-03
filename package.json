@@ -25,7 +25,7 @@
   "license": "MIT",
   "devDependencies": {
     "c8": "^10.0.0",
-    "jscpd": "^4.0.0",
+    "jscpd": "^5.0.0",
     "standard": "^17.0.0",
     "standard-reporter": "^1.0.5"
   },
